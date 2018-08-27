@@ -93,9 +93,11 @@ git stash pop
 
 合并分支把树杈掰到主干上
 git rebase
-##添加远程的仓库
+##添加到远程的仓库
 push -u
 git push origin master -u   //获取最新代码
+
+我们第一次push的时候,加上-u参数,Git就会把本地的master分支和远程的master分支进行关联起来,我们以后的push操作就不再需要加上-u参数了
 ##连接远程仓库
 git remote add origin 仓库的地址
 ##查看远程仓库
